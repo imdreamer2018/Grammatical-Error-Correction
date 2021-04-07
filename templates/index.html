@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CorrectLy</title>
+	<style>
+	table {
+	    font-family: arial, sans-serif;
+	    border-collapse: collapse;
+	    width: 100%;
+	}
+	
+	td, th {
+	    border: 1px solid #dddddd;
+	    text-align: center;
+	    padding: 8px;
+	}
+	
+	tr:nth-child(even) {
+	    background-color: #dddddd;
+	}
+	</style>
+</head>
+<body>
+<center>
+
+<h1>Upload a commit message file(must be txt)</h1>
+<form action="/file" method=post enctype=multipart/form-data>
+  <p><input id="fileupload" type=file name=file>
+     <input type=submit value=Upload></p>
+</form>
+
+<br><hr><br>
+
+<h1>Type your commit message</h1>
+<form action="/text" method=post enctype=multipart/form-data>
+<textarea name="textupload" rows="4" cols="50">
+</textarea><br>
+<input type=submit value=Submit>
+</form>
+
+<br><hr>
+YOUR INPUT: {{wrong}}
+<hr>
+<b>CORRECT OUTPUT: {{correct}}</b>
+
+</center>
+
+</body>
+</html>
