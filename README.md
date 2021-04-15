@@ -16,12 +16,19 @@ Grammatical-Error-Correction can correct the spelling and grammar of sentences.
 he go to scholl -> He goes to school
 ```
 
+The first run will download the model. You will find the following information in the console.
+
+```shell
+Downloading grammatical error correction model [bert_0_gector]! Please wait a minute!
+```
+
 #### From the interpreter:
 
 ```python
->>> from src.checker import grammar_correction
+>>> from src.checker import GrammarCorrection
+>>> grammar_correction = GrammarCorrection()
 >>> input_sentence = 'he go to scholl'
->>> correct_sentence = grammar_correction(False, input_sentence)
+>>> correct_sentence = grammar_correction.correct_sentence(input_sentence)
 >>> correct_sentence
 'He goes to school'
 ```
