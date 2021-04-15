@@ -10,6 +10,12 @@ Grammatical-Error-Correction is an NLP-based spelling and grammar correction too
 
 ## Example usage
 
+Grammatical-Error-Correction can correct the spelling and grammar of sentences.
+
+```shell
+he go to scholl -> He goes to school
+```
+
 #### From the interpreter:
 
 ```python
@@ -39,6 +45,11 @@ python app.py
 click http://127.0.0.1:21046
 
 ------
+
+## Prerequisites
+
+- python3.6
+- Java8
 
 ## Docker depoly
 
@@ -84,11 +95,15 @@ docker run -itd --name grammatical-error-correction -p 21046:21046 -d [your dock
 ├── templates
 │   └── index.html
 └── utils
-    ├── __pycache__
     ├── helpers.py
     ├── prepare_clc_fce_data.py
 	  └── preprocess_data.py
 ```
+
+## Reference
+
+- **[language_check](https://github.com/myint/language-check)** (great spelling-correction library with extensive support for simple grammar suggestions, punctuation errors)
+- **[GECToR](https://github.com/grammarly/gector)**(training and testing state-of-the-art models for grammatical error correction with the official PyTorch)
 
 ## License
 
