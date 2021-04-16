@@ -104,7 +104,7 @@ docker run -itd --name grammatical-error-correction -p 21046:21046 -d [your dock
 └── utils
     ├── helpers.py
     ├── prepare_clc_fce_data.py
-	  └── preprocess_data.py
+    └── preprocess_data.py
 ```
 
 ## Reference
