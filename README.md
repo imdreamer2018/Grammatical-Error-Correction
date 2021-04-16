@@ -44,7 +44,7 @@ curl -X POST -H "Content-Type: application/json" -d '{"text":"he go to a school 
 
 ```shell
 #environment python3.6
-https://github.com/imdreamer2018/Grammatical-Error-Correction.git
+git clone https://github.com/imdreamer2018/Grammatical-Error-Correction.git
 pip install -r requirements.txt
 python app.py
 ```
